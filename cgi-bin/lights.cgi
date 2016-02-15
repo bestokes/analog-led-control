@@ -9,10 +9,10 @@ SETPIN="pigs p "
 # define pins
 RED=17 ; GREEN=22 ; BLUE=24
 
-# set some ramdon  VALUE s
-$RVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
-$GVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
-$BVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
+# set some ramdon values
+RVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
+GVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
+BVALUE =$(echo $[ 1 + $[ RANDOM % 255 ]])
 
 # kill any running sequence
 rm -f /tmp/*.lights.lock
@@ -34,7 +34,6 @@ case ${QUERY_STRING} in;
         done
       done &
   ;;
-
   green)
       $SETPIN $RED 0
       $SETPIN $BLUE 0
@@ -51,7 +50,6 @@ case ${QUERY_STRING} in;
         done
       done &
   ;;
-
   red)
       $SETPIN $BLUE 0
       $SETPIN $GREEN 0
@@ -68,7 +66,6 @@ case ${QUERY_STRING} in;
         done
       done &
   ;;
-
   party)
       lockfile=$(mktemp).lights.lock
       touch $lockfile
@@ -96,16 +93,15 @@ case ${QUERY_STRING} in;
         G VALUE =$GNewVALUE
       done &
   ;;
-
   random)
       $SETPIN $RED $RVALUE
       $SETPIN $GREEN $GVALUE
       $SETPIN $BLUE $BVALUE
   ;;
-
   off)
       sleep 3 # allows running patterns to finish first
       $SETPIN $RED 0
       $SETPIN $BLUE 0
       $SETPIN $GREEN 0
   ;;
+esac  
