@@ -15,3 +15,7 @@ This tutorial will get you up and running with a RGB LED strip: http://popoklops
 * put the index.html into your DocumentRoot
 * download jquery into /js/ in your DocumentRoot
 * the buttons came from here http://unicorn-ui.com/buttons/builder/ - put the buttons.css into /css/ in DocumentRoot
+
+# Furthermore 
+
+I would suggest you limit access to the webpage if your webserver is Internet facing. 
