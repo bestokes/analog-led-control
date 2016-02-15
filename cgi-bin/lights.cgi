@@ -67,24 +67,24 @@ elif [ "$QUERY_STRING" = "party" ]; then
       touch $lockfile
       while [ -f $lockfile ]; do
         RNewVALUE=$(echo $[ 1 + $[ RANDOM % 255 ]])
-        if [ "$RNew VALUE " -ge "$RED VALUE " ]; then
-          for VALUE in $(seq $RNewVALUE  -2 $RED VALUE ); do /usr/local/bin/pigs p $RED $VALUE ; done
+        if [ "$RNew VALUE " -ge "$RVALUE " ]; then
+          for VALUE in $(seq $RNewVALUE  -2 $RVALUE ); do /usr/local/bin/pigs p $RED $VALUE ; done
         else
-          for VALUE in $(seq $RNewVALUE  2 $RED VALUE ); do /usr/local/bin/pigs p $RED $VALUE ; done
+          for VALUE in $(seq $RNewVALUE  2 $RVALUE ); do /usr/local/bin/pigs p $RED $VALUE ; done
         fi
         RVALUE=$RNewVALUE
         BNewVALUE=$(echo $[ 1 + $[ RANDOM % 255 ]])
         if [ "$BNew VALUE " -ge "$BLUE VALUE " ]; then
-          for VALUE in $(seq $BNewVALUE  -2 $BLUE VALUE ); do /usr/local/bin/pigs p $BLUE $VALUE ; done
+          for VALUE in $(seq $BNewVALUE  -2 $BVALUE ); do /usr/local/bin/pigs p $BLUE $VALUE ; done
         else
-          for VALUE in $(seq $BNewVALUE  2 $BLUE VALUE ); do /usr/local/bin/pigs p $BLUE $VALUE ; done
+          for VALUE in $(seq $BNewVALUE  2 $BVALUE ); do /usr/local/bin/pigs p $BLUE $VALUE ; done
         fi
         BVALUE=$BNew VALUE
         GNewVALUE=$(echo $[ 1 + $[ RANDOM % 255 ]])
         if [ "$GNew VALUE " -ge "$GREEN VALUE " ]; then
-          for VALUE in $(seq $GNewVALUE  -2 $GREEN VALUE ); do /usr/local/bin/pigs p $GREEN $VALUE ; done
+          for VALUE in $(seq $GNewVALUE  -2 $GVALUE ); do /usr/local/bin/pigs p $GREEN $VALUE ; done
         else
-          for VALUE in $(seq $GNewVALUE  2 $GREEN VALUE ); do /usr/local/bin/pigs p $GREEN $VALUE ; done
+          for VALUE in $(seq $GNewVALUE  2 $GVALUE ); do /usr/local/bin/pigs p $GREEN $VALUE ; done
         fi
         GVALUE=$GNewVALUE
       done &
