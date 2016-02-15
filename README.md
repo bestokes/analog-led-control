@@ -4,11 +4,11 @@ A simple web page with buttons to manage an LED strip.
 
 This is quick and dirty, it could be extended/improved. I wrote it with cgi/bash because I wanted to do something quickly. 
 
-Requirements
+# Requirements
 
 This tutorial will get you up and running with a RGB LED strip: http://popoklopsi.github.io/RaspberryPi-LedStrip/#/ 
 
-** Then: **
+**Then:**
 
 * install apache2 webserver and enable cgi
 * put the cgi script into your cgi-bin
