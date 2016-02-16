@@ -2,7 +2,7 @@
 
 A simple web page with buttons to manage an LED strip. 
 
-This is very quick and dirty, it could be extended/improved. I wrote it with cgi/bash because I wanted to do something quickly and see what could be done with pigs and a few for loops, and something that could be used with a touchscreen on the pi. You could also use this to remote control lights from another device on the network, like a mobile phone.
+This is a very quick and dirty project. I wrote it with cgi/bash because I wanted to do something quickly and see what could be done with pigs and a few for loops, my other reqirement was something that could be used with a touchscreen on the pi. You could also use this to remote control lights from another device on the network, like a mobile phone. The html is pretty raw, the idea is someone could take this and make something that actually looks nice. 
 
 ![ScreenShot](/screenshots/screen.jpg)
 
