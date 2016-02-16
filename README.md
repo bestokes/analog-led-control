@@ -9,16 +9,15 @@ This is a very quick and dirty project. I wrote it with cgi/bash because I wante
 # Requirements
 
 This tutorial will get you up and running with a RGB LED strip: http://popoklopsi.github.io/RaspberryPi-LedStrip/#/ 
+You need to be running pigpiod for the cgi script to do anything.
 
 **Then:**
-
-* make a directory called /lockfiles writable www-data
+```
+sudo mkdir /lockfiles && sudo chown www-data /lockfiles -R
+```
 * install apache2 webserver and enable cgi
 * put the cgi script into your cgi-bin
 * put the index.html into your DocumentRoot
 * download jquery into /js/ in your DocumentRoot
 * the buttons came from here http://unicorn-ui.com/buttons/builder/ - put the buttons.css into /css/ in DocumentRoot
-
-# Furthermore 
-
-I would suggest you limit access to the webpage if your webserver is Internet facing. 
+* not sure if I'm allowed to redistribute jqery and the buttons css which is why they aren't hosted here.
